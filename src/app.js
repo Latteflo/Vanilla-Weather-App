@@ -74,7 +74,7 @@ function getForecast(coordinates) {
 }
 function getCurrentLocation(event) {
   event.preventDefault();
-  navigator.geolocation.getCurrentPosition(getForecast);
+  navigator.geolocation.getCurrentPosition(place);
 }
 
 function displayTemperature(response) {
@@ -94,6 +94,7 @@ function displayTemperature(response) {
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
+  celsiusTemperature = response.data.main.temp;
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
@@ -121,7 +122,7 @@ form.addEventListener("submit", handleSubmit);
 let currentLocationBtn = document.querySelector("#current-location");
 currentLocationBtn.addEventListener("click", getCurrentLocation);
 
-search("Brussels");
+let celsiusTemperature = null;
 
 let radioOption = document.querySelectorAll("input[type='radio']");
 function changeValue() {
@@ -145,3 +146,8 @@ function changeValue() {
 radioOption.forEach((element) =>
   element.addEventListener("click", changeValue)
 );
+
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", handleSubmit);
+
+search("Brussels");
