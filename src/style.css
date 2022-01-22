@@ -1,9 +1,6 @@
 body {
   font-family: arial, sans-serif;
-  background-image: url(/src/media/background.jpg);
   background: rgb(171, 224, 223) 11.2%;
-  background-position: center;
-  background-size: auto;
 }
 
 h1 {
