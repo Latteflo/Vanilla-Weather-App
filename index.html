@@ -63,42 +63,75 @@
               <div class="clearfix weather-temperature">
                 <img src="" alt="Clear" id="icon" class="float-left" />
                 <div class="float-left">
-                  <strong id="temperature"> </strong>
-                </div>
-                <div class="float-left" id="radio">
-                  <input
-                    type="radio"
-                    id="Choice1"
-                    name="unit"
-                    value="celsius"
-                    checked
-                  />
-                  <label for="Choice1">C</label>
-                  <input
-                    type="radio"
-                    id="Choice2"
-                    name="unit"
-                    value="farenheit"
-                  />
-                  <label for="Choice2">F</label>
+                  <strong id="temperature"></strong
+                  ><span class="units"
+                    ><a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  >
                 </div>
               </div>
             </div>
             <div class="col-6">
               <ul>
                 <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> m/h</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
               </ul>
             </div>
+          </div>    
+           <div class="row" id="weather-forecast">
+            <div class="col-2" id="days-week">
+              Thu<img
+                src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png"
+                alt="rain icon"
+                class="rain-icon"
+              >14°
+              <br/>
+               11°
+            </div>
+            <div class="col-2">
+              Fri<img
+                src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                alt="rain icon"
+                class="partly-cloudy-icon"
+              />13°
+              <br/>
+              11°
+            </div>
+            <div class="col-2">
+              Sat<img
+                src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                alt="rain icon"
+                class="partly-cloudy-icon"
+              />14°
+              <br/>
+              11°
+            </div>
+            <div class="col-2">
+              Sun<img
+                src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png"
+                alt="rain icon"
+                class="rain-icon"
+              />12°
+              <br/>
+               9°
+            </div>
+            <div class="col-2">
+              Thu<img
+                src="https://ssl.gstatic.com/onebox/weather/48/rain_light.png"
+                alt="rain icon"
+                class="rain-icon"
+              />14°
+              <br/>
+               11°
+            </div>
           </div>
-          <div class="weather-forecast" id="forecast"></div>
         </div>
+    </div>  
+ </div>
         <small>
           <a
             href="https://github.com/Latteflo/Vanilla-Weather-App"
-            target="_blank"
-            >Open-source code</a
-          >
+            target="_blank"> Open-source code</a>
           by Florentina Simion
         </small>
       </div>
