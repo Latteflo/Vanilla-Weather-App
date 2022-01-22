@@ -129,9 +129,8 @@ li:first-letter {
 .weather-forecast-temperatures {
   font-size: 13px;
 }
-.small {
-  padding: 15px;
-  margin: 15px auto;
+.credits {
+  padding: 2px;
   position: absolute;
   left: 480px;
 }
