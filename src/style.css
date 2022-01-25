@@ -1,6 +1,9 @@
 body {
   font-family: arial, sans-serif;
-  background: rgb(190, 228, 210) 62.3%;
+  background: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/237/original/5177180.jpg?1642689877);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 
 h1 {
