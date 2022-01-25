@@ -53,10 +53,7 @@ li:first-letter {
   display: flex;
   gap: 10px;
 }
-.col-2 {
-  display: inline-table;
-  max-width: 20px;
-}
+
 .city-input {
   width: 90px;
 }
@@ -113,9 +110,7 @@ li:first-letter {
   margin-top: 20px;
   text-align: center;
   color: #000;
-  justify-content: space-evenly;
 }
-
 .weather-forecast-date {
   font-size: 16px;
   opacity: 0.5;
