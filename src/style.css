@@ -113,7 +113,6 @@ li:first-letter {
   margin-top: 20px;
   text-align: center;
   color: #000;
-  justify-content: space-around;
 }
 
 .weather-forecast-date {
